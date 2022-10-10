@@ -32,7 +32,9 @@ public class StudentSevicer {
     public void remove(Long id) {
         studentRepository.deleteById(id);
     }
-//    public List<Student>findAllByScore(int sub_id){
-//        return  studentRepository.findAllByScore((long) sub_id);
+
+
+//    public List<Student>findAllByScore(Long sub_id){
+//        return  studentRepository.findAllByScore(sub_id);
 //    }
 }

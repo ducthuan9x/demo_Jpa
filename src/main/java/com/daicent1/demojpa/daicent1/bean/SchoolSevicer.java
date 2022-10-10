@@ -13,8 +13,9 @@ import java.util.Optional;
 public class SchoolSevicer {
     @Autowired
     SchoolRepository schoolRepository;
-    public List<School>findAll(){
-      return   schoolRepository.findAll();
+
+    public List<School> findAll() {
+        return schoolRepository.findAll();
     }
 
     public Optional<School> findById(Long id) {
@@ -27,6 +28,9 @@ public class SchoolSevicer {
 
     }
 
+    public List<School> search(String name) {
+        return schoolRepository.findAllByNameContaining(name);
+    }
 
     public void remove(Long id) {
         schoolRepository.deleteById(id);

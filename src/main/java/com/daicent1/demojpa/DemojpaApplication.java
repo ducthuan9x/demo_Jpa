@@ -34,9 +34,10 @@ public class DemojpaApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        System.out.println(schoolSevicer.findAll());
+//        System.out.println(schoolSevicer.findAll());
 //        System.out.println(gradeSevicer.findAll());
 //        System.out.println(studentSevicer.findAll());
+        System.out.println(schoolSevicer.search("D"));
     }
 
 }

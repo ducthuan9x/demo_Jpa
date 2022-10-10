@@ -11,7 +11,7 @@ import java.util.List;
 
 @Repository
 public interface StudentRepository extends JpaRepository<Student,Long> {
-//   @Query( "select stu.name, s2.name from student stu\n" +
+//   @Query( value = "select stu.name, s2.name from student stu\n" +
 //           "join subandstu s on stu.stu_id = s.stu_id\n" +
 //           "join subject s2 on s.sub_id = s2.sub_id\n" +
 //           "    where score=(select max(score)from subandstu\n" +
